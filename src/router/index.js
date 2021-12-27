@@ -1,13 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/pages/Home.vue'
 import Authentication from '../views/pages/Authentication.vue'
 import EmailVerification from '../views/pages/EmailVerification.vue'
+
+import Fullwidth from '../views/layouts/Fullwidth.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+
+  {
+    path: '/home',
+    name: 'Homex',
+    component: Fullwidth,
+      children: [
+        {
+          path: '',
+          name: 'Homexx',
+          component: Home
+
+        }
+      ]
   },
 
   {

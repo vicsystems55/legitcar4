@@ -30,7 +30,7 @@
                         <h2>Welcome!</h2>
                         <p>Use credentials to access your account.</p>
                     </div>
-                    <form>
+                
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
@@ -67,7 +67,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    
                     <div class="user-form-direction">
                         <p>Don't have an account? click on the <span>( sign up )</span> button above.</p>
                     </div>
@@ -80,7 +80,7 @@
                     </div>
                   
                    
-                    <form>
+                    
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
@@ -126,7 +126,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                   
                     <div class="user-form-direction">
                         <p>Already have an account? click on the <span>( sign in )</span> button above.</p>
                     </div>
@@ -181,9 +181,9 @@ export default {
                 let loader = this.$loading.show({
                     // Optional parameters
                     container: this.fullPage ? null : this.$refs.formContainer,
-                    canCancel: true,
+                    canCancel: false,
                     onCancel: this.onCancel,
-                    color: '#6CC3EC',
+                    color: '#491A5D',
                 });
 
                     setTimeout(() => {
@@ -193,7 +193,7 @@ export default {
                   
                   this.axios({
                       method: 'post',
-                      url: 'http://localhost:9999/api/login',
+                      url: 'https://legitcar.phoenixgn.com/api/login',
                        data: {
                             email: this.emailx,
                             password: this.passwordx
@@ -234,13 +234,13 @@ export default {
                         let loader = this.$loading.show({
                             // Optional parameters
                             container: this.fullPage ? null : this.$refs.formContainer,
-                            canCancel: true,
+                            canCancel: false,
                             onCancel: this.onCancel,
-                            color: '#6CC3EC',
+                            color: '#491A5D',
                         });
                        this.axios({
                                 method: "post",
-                                url: 'http://localhost:9999/api/registerx',
+                                url: 'https://legitcar.phoenixgn.com/api/register',
                                 data: {
                                     name: this.name,
                                     email: this.email,
