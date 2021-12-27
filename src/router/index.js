@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/pages/Home.vue'
 import Authentication from '../views/pages/Authentication.vue'
 import EmailVerification from '../views/pages/EmailVerification.vue'
 
@@ -20,7 +20,7 @@ const routes = [
         {
           path: '',
           name: 'Homex',
-          component: Fullwidth
+          component: Home
 
         }
       ]
