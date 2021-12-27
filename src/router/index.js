@@ -9,7 +9,15 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Fullwidth,
+      children: [
+        {
+          
+          name: 'Homexxs',
+          component: Home
+
+        }
+      ]
   },
 
   {
