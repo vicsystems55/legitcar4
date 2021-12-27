@@ -18,7 +18,7 @@
                     <a href="#"><img src="https://legitcar.phoenixgn.com/legit_car2.png" alt="logo"></a>
                     <a href="index.html"><i class="fas fa-arrow-left"></i></a>
                 </div>
-                <div class="user-form-category-btn">
+                <div class="user-form-category-btn pt-5">
                     <ul class="nav nav-tabs">
                         <li><a href="#login-tab" class="nav-link active" data-toggle="tab">sign in</a></li>
                         <li><a href="#register-tab" class="nav-link" data-toggle="tab">sign up</a></li>
