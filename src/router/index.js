@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/pages/Home.vue'
+import Home from '../views/Home.vue'
 import Authentication from '../views/pages/Authentication.vue'
 import EmailVerification from '../views/pages/EmailVerification.vue'
 
@@ -9,15 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Fullwidth,
-      children: [
-        {
-          
-          name: 'Homexxs',
-          component: Home
-
-        }
-      ]
+    component: Home
   },
 
   {
@@ -27,8 +19,8 @@ const routes = [
       children: [
         {
           path: '',
-          name: 'Homexx',
-          component: Home
+          name: 'Homex',
+          component: Fullwidth
 
         }
       ]
