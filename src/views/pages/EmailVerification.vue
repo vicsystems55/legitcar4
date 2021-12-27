@@ -20,8 +20,8 @@
                 </div>
                 
 
-                <div class="tab-pane active pt-sm-5" id="login-tab">
-                    <div class="user-form-title pt-sm-5">
+                <div class="tab-pane active pt-5" id="login-tab">
+                    <div class="user-form-title pt-5">
                         <h4 class="pt-5">Verify Email!</h4>
                         <p>Enter the OTP sent to your mail</p>
                     </div>
