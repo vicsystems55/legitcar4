@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/pages/public/Home.vue'
+
 import Authentication from '../views/pages/Authentication.vue'
 import EmailVerification from '../views/pages/EmailVerification.vue'
 
@@ -69,6 +69,21 @@ import BuyerProfile from '../views/pages/buyers/Profile.vue'
 
 
 
+import Home from '../views/pages/public/Home.vue'
+
+import Cart from '../views/pages/public/Cart.vue'
+
+import Contact from '../views/pages/public/Contact.vue'
+
+import Details from '../views/pages/public/Details.vue'
+
+import Store from '../views/pages/public/Store.vue'
+
+import About from '../views/pages/public/About.vue'
+
+
+
+
 
 
 //agents
@@ -113,13 +128,82 @@ const routes = [
 
   {
     path: '/home',
-    name: 'Homex',
     component: Fullwidth,
       children: [
         {
           path: '',
-          name: 'Homex',
+          name: 'home',
           component: Home
+
+        }
+      ]
+  },
+
+
+    {
+    path: '/about',
+    component: Fullwidth,
+      children: [
+        {
+          path: '',
+          name: 'about',
+          component: About
+
+        }
+      ]
+  },
+
+
+  {
+    path: '/cart',
+    component: Fullwidth,
+      children: [
+        {
+          path: '',
+          name: 'cart',
+          component: Cart
+
+        }
+      ]
+  },
+
+
+  {
+    path: '/contact',
+    component: Fullwidth,
+      children: [
+        {
+          path: '',
+          name: 'contact',
+          component: Contact
+
+        }
+      ]
+  },
+
+
+  {
+    path: '/details',
+    component: Fullwidth,
+      children: [
+        {
+          path: '',
+          name: 'details',
+          component: Details
+
+        }
+      ]
+  },
+
+
+  {
+    path: '/store',
+    component: Fullwidth,
+      children: [
+        {
+          path: '',
+          name: 'store',
+          component: Store
 
         }
       ]

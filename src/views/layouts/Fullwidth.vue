@@ -2,7 +2,7 @@
     <div>        <!--=====================================
                     HEADER PART START
         =======================================-->
-        <header class="header-part">
+        <header  class="header-part">
             <div class="container">
                 <div class="header-content">
                     <div class="header-left">
@@ -252,85 +252,47 @@
                     <div class="sidebar-menu">
                         <ul class="nav nav-tabs">
                             <li><a href="#main-menu" class="nav-link active" data-toggle="tab">Main Menu</a></li>
-                            <li><a href="#author-menu" class="nav-link" data-toggle="tab">Author Menu</a></li>
+                            <li><a href="#author-menu" class="nav-link" data-toggle="tab">Members Menu</a></li>
                         </ul>
 
                         <div class="tab-pane active" id="main-menu">
                             <ul class="navbar-list">
-                                <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="#">
-                                        <span>Categories</span>
-                                        <i class="fas fa-plus"></i>
-                                    </a>
-                                    <ul class="dropdown-list">
-                                        <li><a class="dropdown-link" href="category-list.html">category list</a></li>
-                                        <li><a class="dropdown-link" href="category-details.html">category details</a></li>
-                                    </ul>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/home">Home</router-link>
                                 </li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="#">
-                                        <span>Advertise List</span>
-                                        <i class="fas fa-plus"></i>
-                                    </a>
-                                    <ul class="dropdown-list">
-                                        <li><a class="dropdown-link" href="ad-list-column3.html">ad list column 3</a></li>
-                                        <li><a class="dropdown-link" href="ad-list-column2.html">ad list column 2</a></li>
-                                        <li><a class="dropdown-link" href="ad-list-column1.html">ad list column 1</a></li>
-                                    </ul>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/about">About</router-link>
+                                </li>      
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/contact">Contact</router-link>
                                 </li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="#">
-                                        <span>Advertise details</span>
-                                        <i class="fas fa-plus"></i>
-                                    </a>
-                                    <ul class="dropdown-list">
-                                        <li><a class="dropdown-link" href="ad-details-grid.html">ad details grid</a></li>
-                                        <li><a class="dropdown-link" href="ad-details-left.html">ad details left</a></li>
-                                        <li><a class="dropdown-link" href="ad-details-right.html">ad details right</a></li>
-                                    </ul>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/shop">Shop</router-link>
                                 </li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="#">
-                                        <span>Pages</span>
-                                        <i class="fas fa-plus"></i>
-                                    </a>
-                                    <ul class="dropdown-list">
-                                        <li><a class="dropdown-link" href="about.html">About Us</a></li>
-                                        <li><a class="dropdown-link" href="compare.html">Ad Compare</a></li>
-                                        <li><a class="dropdown-link" href="cities.html">Ad by Cities</a></li>
-                                        <li><a class="dropdown-link" href="price.html">Pricing Plan</a></li>
-                                        <li><a class="dropdown-link" href="user-form.html">User Form</a></li>
-                                        <li><a class="dropdown-link" href="404.html">404</a></li>
-                                    </ul>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/cart">Cart</router-link>
                                 </li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="#">
-                                        <span>blogs</span>
-                                        <i class="fas fa-plus"></i>
-                                    </a>
-                                    <ul class="dropdown-list">
-                                        <li><a class="dropdown-link" href="blog-list.html">Blog list</a></li>
-                                        <li><a class="dropdown-link" href="blog-details.html">blog details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
                             </ul>
                         </div>
 
                         <div class="tab-pane" id="author-menu">
                             <ul class="navbar-list">
-                                <li class="navbar-item"><a class="navbar-link" href="dashboard.html">Dashboard</a></li>
-                                <li class="navbar-item"><a class="navbar-link" href="profile.html">Profile</a></li>
-                                <li class="navbar-item"><a class="navbar-link" href="ad-post.html">Ad Post</a></li>
-                                <li class="navbar-item"><a class="navbar-link" href="my-ads.html">My Ads</a></li>
-                                <li class="navbar-item"><a class="navbar-link" href="setting.html">Settings</a></li>
-                                <li class="navbar-item navbar-dropdown">
-                                    <a class="navbar-link" href="bookmark.html">
-                                        <span>bookmark</span>
-                                        <span>0</span>
-                                    </a>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/admin/dashboard">Dashboard</router-link>
                                 </li>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/admin/accounts">Accounts</router-link>
+                                </li>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/admin/dashboard">Ad Post</router-link>
+                                </li>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/admin/dashboard">My Ads</router-link>
+                                </li>
+                                <li class="navbar-item">
+                                    <router-link class="navbar-link" to="/admin/dashboard">Messages</router-link>
+                                </li>
+                                
                                 <li class="navbar-item navbar-dropdown">
                                     <a class="navbar-link" href="message.html">
                                         <span>Message</span>
@@ -399,118 +361,16 @@
         <!--=====================================
                   SINGLE BANNER PART START
         =======================================-->
-        <section class="single-banner dashboard-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="single-content">
-                            <h2>dashboard</h2>
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">dashboard</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!--=====================================
                   SINGLE BANNER PART END
         =======================================-->
 
 
-        <!--=====================================
-                DASHBOARD HEADER PART START
-        =======================================-->
-        <section class="dash-header-part">
-            <div class="container">
-                <div class="dash-header-card">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="dash-header-left">
-                                <div class="dash-avatar">
-                                    <a href="#"><img src="images/avatar/01.jpg" alt="avatar"></a>
-                                </div>
-                                <div class="dash-intro">
-                                    <h4><a href="#">gackon Honson</a></h4>
-                                    <h5>new seller</h5>
-                                    <ul class="dash-meta">
-                                        <li>
-                                            <i class="fas fa-phone-alt"></i>
-                                            <span>(123) 000-1234</span>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-envelope"></i>
-                                            <span>gackon@gmail.com</span>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <span>Los Angeles, West America</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="dash-header-right">
-                                <div class="dash-focus dash-list">
-                                    <h2>2433</h2>
-                                    <p>listing ads</p>
-                                </div>
-                                <div class="dash-focus dash-book">
-                                    <h2>2433</h2>
-                                    <p>total follower</p>
-                                </div>
-                                <div class="dash-focus dash-rev">
-                                    <h2>2433</h2>
-                                    <p>total review</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row d-none">
-                        <div class="col-lg-12">
-                            <div class="dash-header-alert alert fade show">
-                                <p>From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and Edit your password and account details.</p>
-                                <button data-dismiss="alert"><i class="fas fa-times"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row d-none">
-                        <div class="col-lg-12">
-                            <div class="dash-menu-list">
-                                <ul>
-                                    <li><a class="active" href="dashboard.html">dashboard</a></li>
-                                    <li><a href="profile.html">Profile</a></li>
-                                    <li><a href="ad-post.html">ad post</a></li>
-                                    <li><a href="my-ads.html">my ads</a></li>
-                                    <li><a href="setting.html">settings</a></li>
-                                    <li><a href="bookmark.html">bookmarks</a></li>
-                                    <li><a href="message.html">message</a></li>
-                                    <li><a href="notification.html">notification</a></li>
-                                    <li><a href="user-form.html">logout</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                DASHBOARD HEADER PART END
-        =======================================-->
+ 
 
 
-        <!--=====================================
-                    DASHBOARD PART START
-        =======================================-->
-        <section class="dashboard-part">
-
-            <div class="container">
-                <router-view></router-view>
-            </div>
-           
-        </section>
+         <router-view></router-view>
         <!--=====================================
                     DASHBOARD PART END
         =======================================-->
